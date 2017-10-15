@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
 
 xhost +
-docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.config/Code:/root/.config/Code -v $HOME/.vscode:/root/.vscode -v /usr/local/bin/jsonnet:/usr/local/bin/jsonnet -v $PWD:$PWD -w $PWD -e DISPLAY=$DISPLAY hackenfreude/vscode
+docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.config/Code:/root/.config/Code -v $HOME/.vscode:/root/.vscode -v /usr/local/bin/jsonnet:/usr/local/bin/jsonnet -v $SRC/github.com/ksonnet/ksonnet-lib:$SRC/github.com/ksonnet/ksonnet-lib -v $PWD:$PWD -w $PWD -e DISPLAY=$DISPLAY -e SRC=$SRC hackenfreude/vscode
 xhost -
