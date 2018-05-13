@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
 
 xhost +
-docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.intellij:/root/.IdeaIC2017.2/ -v $HOME/.ivy2:/root/.ivy2 -v $HOME/.sbt:/root/.sbt -v $HOME/.m2:/root/.m2 -v $PWD:$PWD -w $PWD -e DISPLAY=$DISPLAY hackenfreude/intellij
+docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.intellij:/root/.IdeaIC2018.1/ -v $HOME/.ivy2:/root/.ivy2 -v $HOME/.sbt:/root/.sbt -v $HOME/.m2:/root/.m2 -v $PWD:$PWD -w $PWD -e DISPLAY=$DISPLAY hackenfreude/intellij
 xhost -
