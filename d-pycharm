@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+xhost +
+docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.pycharm:/root/.PyCharmCE2018.1 -v $HOME/.local/share/virtualenvs:/root/.local/share/virtualenvs -v $PWD:$PWD -w $PWD -e DISPLAY=$DISPLAY hackenfreude/pycharm
+xhost -
