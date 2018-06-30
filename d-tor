@@ -1,5 +1,6 @@
 #! /usr/bin/env bash
 
 xhost +
-docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY --name tor-browser jess/tor-browser
+docker run --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY --name tor-browser hackenfreude/tor
 xhost -
+
