@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
 
 xhost +
-docker run --rm -it -v ~/Downloads:/root/Downloads -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.mozilla/firefox/custom/user.js:/root/.mozilla/firefox/custom/user.js -e DISPLAY=$DISPLAY hackenfreude/firefox
+docker run --rm -it -v ~/Downloads:/root/Downloads -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.mozilla/firefox/custom/user.js:/root/.mozilla/firefox/custom/user.js -e DISPLAY=$DISPLAY hackenfreude/firefox@sha256:45d108acee1cd828338b309c028518b9b3734f04b15950626df264e74c3147d0
 xhost -
